@@ -1,0 +1,68 @@
+# Project-level .gitignore for backend (Python) + frontend (Next.js)
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Conda / local env files
+.conda/
+conda-meta/
+
+# Jupyter
+*.nbconvert.ipynb
+
+# Node dependencies and build artifacts
+node_modules/
+.pnp
+.pnp.js
+.next/
+out/
+build/
+coverage/
+*.tsbuildinfo
+
+# Framework/platform
+.vercel/
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# Keep generated Next typing local
+frontend/next-env.d.ts
